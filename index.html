@@ -25,27 +25,47 @@
         </nav>
     </header>
 
-    <main class="grid md:grid-cols-2 gap-16 items-center">
-        <section>
-            <h2 class="serif text-5xl md:text-7xl mb-8 leading-tight italic">Gu over Brands.</h2>
-            <p class="text-lg text-dim leading-relaxed mb-8">
-                89 Warehouse is a digital sanctuary for the obsessive archivist. We do not sell commodities; we preserve hidden knowledge. Our philosophy is rooted in the appreciation of negative space, the architecture of silhouette, and the silent storytelling of fibers.
-            </p>
-            <div class="space-y-4">
-                <p class="text-sm border-l border-dim pl-4 py-2 italic text-dim">
-                    "Silhouette is the architecture of emptiness. It is the only thing that cannot be faked with a logo."
+    <main>
+        <section class="grid md:grid-cols-2 gap-16 items-center mb-24">
+            <section>
+                <h2 class="serif text-5xl md:text-7xl mb-8 leading-tight italic">Gu over Brands.</h2>
+                <p class="text-lg text-dim leading-relaxed mb-8">
+                    89 Warehouse is a digital sanctuary for the obsessive archivist. We do not sell commodities; we preserve hidden knowledge. Our philosophy is rooted in the appreciation of negative space, the architecture of silhouette, and the silent storytelling of fibers.
                 </p>
-            </div>
+                <div class="space-y-4">
+                    <p class="text-sm border-l border-dim pl-4 py-2 italic text-dim">
+                        "Silhouette is the architecture of emptiness. It is the only thing that cannot be faked with a logo."
+                    </p>
+                </div>
+            </section>
+            <section class="relative aspect-[3/4] bg-neutral-900 border border-dim overflow-hidden group">
+                <div class="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-40 transition-opacity">
+                    <span class="serif text-9xl">物</span>
+                </div>
+                <div class="absolute bottom-8 left-8">
+                    <p class="text-xs tracking-widest uppercase mb-2">Current Collection</p>
+                    <h3 class="serif text-2xl">The Gravity Series</h3>
+                </div>
+            </section>
         </section>
-        <section class="relative aspect-[3/4] bg-neutral-900 border border-dim overflow-hidden group">
-            <div class="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-40 transition-opacity">
-                <span class="serif text-9xl">物</span>
+
+        <!-- START_COLLECTION -->
+        <div class="grid md:grid-cols-3 gap-12 mt-24">
+            <div class="group cursor-pointer relative">
+                <div class="aspect-[3/4] bg-neutral-900 border border-dim overflow-hidden mb-6 relative">
+                    <img src="https://placehold.co/600x800/0a0a0a/e5e5e5?text=Front" class="absolute inset-0 w-full h-full object-cover grayscale transition-opacity duration-700 group-hover:opacity-0">
+                    <img src="https://placehold.co/600x800/1a1a1a/a3a3a3?text=Back" class="absolute inset-0 w-full h-full object-cover grayscale opacity-0 transition-opacity duration-700 group-hover:opacity-100">
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-[10px] tracking-[0.3em] uppercase text-dim mb-2">Levi's — 2000s</p>
+                        <h4 class="serif text-xl">Levi's 527 Slim Bootcut</h4>
+                        <p class="text-[11px] text-dim mt-2 italic tracking-wider">W32 L34 / Cotton Denim</p>
+                    </div>
+                </div>
             </div>
-            <div class="absolute bottom-8 left-8">
-                <p class="text-xs tracking-widest uppercase mb-2">Current Collection</p>
-                <h3 class="serif text-2xl">The Gravity Series</h3>
-            </div>
-        </section>
+        </div>
+        <!-- END_COLLECTION -->
     </main>
 
     <footer class="mt-48 pt-8 border-t border-dim text-xs text-dim flex justify-between">
