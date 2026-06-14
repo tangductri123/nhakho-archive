@@ -13,6 +13,10 @@
         .border-dim { border-color: #262626; }
         .scrollbar-hide::-webkit-scrollbar { display: none; }
         .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Ensure images are not grayscale and allow scrolling */
+        img { filter: none !important; }
+        .product-carousel { -webkit-overflow-scrolling: touch; }
     </style>
 </head>
 <body class="p-8 md:p-16 lg:p-24 max-w-6xl mx-auto">
@@ -31,10 +35,10 @@
 <div class="grid md:grid-cols-3 gap-12 mt-12">
     <!-- PRODUCT 1 -->
     <div class="group cursor-pointer relative">
-        <div class="aspect-[3/4] bg-neutral-900 border border-dim overflow-hidden mb-6 relative flex overflow-x-auto snap-x snap-mandatory scrollbar-hide">
-            <img src="assets/products/Photoroom_000_20260520_135521.jpeg" class="w-full h-full object-cover flex-shrink-0 snap-start">
-            <img src="assets/products/Photoroom_002_20260520_135521.jpeg" class="w-full h-full object-cover flex-shrink-0 snap-start">
-            <img src="https://placehold.co/600x800/0a0a0a/e5e5e5?text=Levi's+527+Detail" class="w-full h-full object-cover flex-shrink-0 snap-start">
+        <div class="aspect-[3/4] bg-neutral-900 border border-dim overflow-hidden mb-6 relative flex overflow-x-auto snap-x snap-mandatory scrollbar-hide product-carousel">
+            <img src="assets/products/Photoroom_000_20260520_135521.jpeg" class="w-full h-full object-cover flex-shrink-0 snap-center">
+            <img src="assets/products/Photoroom_002_20260520_135521.jpeg" class="w-full h-full object-cover flex-shrink-0 snap-center">
+            <img src="https://placehold.co/600x800/0a0a0a/e5e5e5?text=Levi's+527+Detail" class="w-full h-full object-cover flex-shrink-0 snap-center">
         </div>
         <div>
             <p class="text-[10px] tracking-[0.3em] uppercase text-dim mb-2">Levi Strauss & Co. — Modern Era</p>
@@ -44,10 +48,10 @@
     </div>
     <!-- PRODUCT 2 -->
     <div class="group cursor-pointer relative">
-        <div class="aspect-[3/4] bg-neutral-900 border border-dim overflow-hidden mb-6 relative flex overflow-x-auto snap-x snap-mandatory scrollbar-hide">
-            <img src="https://placehold.co/600x800/0a0a0a/e5e5e5?text=Levi's%20501%20Vintage%2090s%20Selvedge%20Jeans+Front" class="w-full h-full object-cover flex-shrink-0 snap-start">
-            <img src="https://placehold.co/600x800/1a1a1a/a3a3a3?text=Levi's%20501%20Vintage%2090s%20Selvedge%20Jeans+Detail" class="w-full h-full object-cover flex-shrink-0 snap-start">
-            <img src="https://placehold.co/600x800/0a0a0a/a3a3a3?text=Levi's%20501+Back" class="w-full h-full object-cover flex-shrink-0 snap-start">
+        <div class="aspect-[3/4] bg-neutral-900 border border-dim overflow-hidden mb-6 relative flex overflow-x-auto snap-x snap-mandatory scrollbar-hide product-carousel">
+            <img src="https://placehold.co/600x800/0a0a0a/e5e5e5?text=Levi's%20501%20Vintage%2090s%20Selvedge%20Jeans+Front" class="w-full h-full object-cover flex-shrink-0 snap-center">
+            <img src="https://placehold.co/600x800/1a1a1a/a3a3a3?text=Levi's%20501%20Vintage%2090s%20Selvedge%20Jeans+Detail" class="w-full h-full object-cover flex-shrink-0 snap-center">
+            <img src="https://placehold.co/600x800/0a0a0a/a3a3a3?text=Levi's%20501+Back" class="w-full h-full object-cover flex-shrink-0 snap-center">
         </div>
         <div>
             <p class="text-[10px] tracking-[0.3em] uppercase text-dim mb-2">Levi Strauss & Co. — Unknown Era</p>
@@ -57,10 +61,10 @@
     </div>
     <!-- PRODUCT 3 -->
     <div class="group cursor-pointer relative">
-        <div class="aspect-[3/4] bg-neutral-900 border border-dim overflow-hidden mb-6 relative flex overflow-x-auto snap-x snap-mandatory scrollbar-hide">
-            <img src="https://placehold.co/600x800/0a0a0a/e5e5e5?text=G-Star%20RAW%20%E2%80%93%20Slim%20Straight%20Waxed%20Jeans+Front" class="w-full h-full object-cover flex-shrink-0 snap-start">
-            <img src="https://placehold.co/600x800/1a1a1a/a3a3a3?text=G-Star%20RAW%20%E2%80%93%20Slim%20Straight%20Waxed%20Jeans+Detail" class="w-full h-full object-cover flex-shrink-0 snap-start">
-            <img src="https://placehold.co/600x800/1a1a1a/e5e5e5?text=G-Star+WAXED+Fabric" class="w-full h-full object-cover flex-shrink-0 snap-start">
+        <div class="aspect-[3/4] bg-neutral-900 border border-dim overflow-hidden mb-6 relative flex overflow-x-auto snap-x snap-mandatory scrollbar-hide product-carousel">
+            <img src="https://placehold.co/600x800/0a0a0a/e5e5e5?text=G-Star%20RAW%20%E2%80%93%20Slim%20Straight%20Waxed%20Jeans+Front" class="w-full h-full object-cover flex-shrink-0 snap-center">
+            <img src="https://placehold.co/600x800/1a1a1a/a3a3a3?text=G-Star%20RAW%20%E2%80%93%20Slim%20Straight%20Waxed%20Jeans+Detail" class="w-full h-full object-cover flex-shrink-0 snap-center">
+            <img src="https://placehold.co/600x800/1a1a1a/e5e5e5?text=G-Star+WAXED+Fabric" class="w-full h-full object-cover flex-shrink-0 snap-center">
         </div>
         <div>
             <p class="text-[10px] tracking-[0.3em] uppercase text-dim mb-2">G-Star RAW — Modern Era</p>
